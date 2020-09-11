@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0%;
+    margin:0%;
+}
+#header{
+    margin:0%;
+    padding:0%;
+}
+#header ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin:0%;
+    padding-left: 0%;
+    border-bottom: 1px solid whitesmoke;
+}
+#header ul li{
+    display:inline-block;
+    justify-content: center;
+    width: fit-content;
+    margin-right: 2%;
+    font-size: 110%;
+    color: rgb(48, 109, 173);
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#header ul li p{
+    margin:auto auto;
+    padding:10px;
+}#header ul li:hover {
+    background-color: rgb(101, 132, 216);
+    color:white;
+}
+form{
+    margin: 0.5% auto;
+    width:30%;
+    font-size: 80%;
+}
+fieldset{
+    border-radius:10px;  
+    border-color: whitesmoke;  
+
+}
+fieldset *{
+    margin-bottom:1.5%;
+}
+.cont_details{
+    margin-top: 2%;
+}
+legend{
+    font-weight: bold;
+    font-size: 110%;
+    font-style: italic;
+}
+.naslovi{
+    font-weight: bold;   
+}
+#submit,#ucitaj{
+    margin-top: 3%;
+    margin-left: 1%;
+    padding: 8px 10px 8px 10px;
+    border-radius: none;
+    background-color: lightgray;
+    border: 1px solid grey;
+}
+.error{
+    border:1px solid red;
+}
+#err,#err2{
+    display:inline-block;
+}
+#ukupno{
+    height: fit-content;
+    width: 100%;
+    background-color: yellow;
+}
+#osobe{
+    position: fixed;
+    bottom:0;
+}

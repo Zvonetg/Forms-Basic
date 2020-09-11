@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Torte</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+    <div id="header">
+        <ul>
+            <li><p>Naslovnica</p></li>
+            <li><p>Vijesti</p></li>
+            <li><p>Sport</p></li>
+            <li><p>Business</p></li>
+            <li><p>Lifestyle</p></li>
+            <li><p>Kontakt</p></li>
+            
+        </ul>
+
+    </div>
+    <div id="wrap" >
+        <form action="" id="cakeform"  >
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Napravi svoju tortu!</legend>
+                <label class="naslovi">Velicina torte</label><br>
+                <label class='radiolabel'><input type="radio" onclick="izracunajUkupno();"  name="selectedcake" value="Round6"  />Okrugla torta 6" -  za 8 osoba (KM 20)</label><br/>
+                <label class='radiolabel'><input type="radio" onclick="izracunajUkupno();" name="selectedcake" value="Round8"  />Okrugla torta 8" - za 12 osoba (KM 25)</label><br/>
+                <label class='radiolabel'><input type="radio" onclick="izracunajUkupno();" name="selectedcake" value="Round10"  />Okrugla torta 10" - za 16 osoba(KM 35)</label><br/>
+                <label class='radiolabel'><input type="radio" onclick="izracunajUkupno();" name="selectedcake" value="Round12" />Okrugla torta 12" - za 30 osoba(KM 75)</label><br/>
+                <br/>
+                <label class="naslovi" >Filling</label><br>
+         
+                <select id="filling" name='filling' onclick="izracunajUkupno();">
+                <option value="None" >Odaberi fil</option>
+                <option value="Lemon" >Limun(KM 5)</option>
+                <option value="Custard" >Krema od vanilije(KM 5)</option>
+                <option value="Fudge" >Cokolada(KM 7)</option>
+          
+               </select>
+                <br/>
+                <p>
+                <label class="naslovi" for='ukljucujesvijece' class="inlinelabel">Ukljuci svjecice(KM 5)</label>
+               <input type="checkbox"onclick="izracunajUkupno();"  id="ukljucujesvijece" name='ukljucujesvijece'  />
+               </p>
+               
+                <p>
+                <label class="naslovi" for='ukljucujenatpis'>Ukljuci natpis(KM 20)</label>
+                <input type="checkbox" onclick="izracunajUkupno();" id="ukljucujenatpis" name="ukljucujenatpis"  />
+                <input type="text"  id="theinscription" name="theinscription" value="Unesite natpis"  />
+                </p>
+               <div id="ukupno">
+               </div>
+                
+                </fieldset>
+            </div>
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Kontakt detalji</legend>
+                <label for='name'class="naslovi">Ime i prezime</label><br>
+                <input type="text" id="name" name='name' />
+                <p id="err"></p>
+                <br/>
+                <label for='address'class="naslovi">Email adresa</label><br>
+                <input type="text" id="address" name='address' value=""/>
+                <p id="err2"></p>
+                
+                <br />
+                <div id="div12" class="klasaButton" id ="form2">
+
+                <p class="button left">
+
+                    <label id="labela1">
+                        <input type="submit" id="obrni" value="Obrni"  />                        
+                    </label>
+                </p>
+                    </div>
+                    <label for='address'class="naslovi">Obrnuta email dresa</label><br>
+                <input type="text" id="address2" name='address'value="" />
+               
+                </fieldset>
+            </div>
+            <input type="submit" id="submit" value="Posalji"  />
+            <input type="submit" id="ucitaj" value="Ucitaj"   />
+            
+        </div>  
+       </form>
+       
+	</div><!--End of wrap-->
+	</div><!--End of wrap-->
+     <table id="osobe" border="1" style="width:100%;" >
+           
+                <tr id="i2">
+                    <th id="i1">Ime i prezime</th>
+                    <th id="e1">Email adresa</th>
+                  <th id="u1">Ukupna cijena torte</th>
+                </tr>
+          
+        </table>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+</body>
+</html>
